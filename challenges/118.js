@@ -57,7 +57,7 @@ class Parrot {
         this.name = name;
     }
     speak(){
-        console.log(this.name+" want a cracker!");
+        return this.name+" want a cracker!";
   }
 }
 
@@ -68,10 +68,10 @@ class ApprenticeParrot extends Parrot {
     }
     speak(){
         if(this.x === 3){
-            console.log(this.name+" want a cracker!");
+            return this.name+" want a cracker!";
             this.x = 0;
         } else {
-            console.log('😴');
+            return '😴';
             this.x++;
         }
     }
