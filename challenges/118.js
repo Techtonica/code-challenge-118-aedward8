@@ -67,11 +67,11 @@ class ApprenticeParrot extends Parrot {
         this.x = 0;
     }
     speak(){
-        if(this.x == 3){
+        if(this.x === 3){
             console.log(this.name+" want a cracker!");
             this.x = 0;
         } else {
-            console.log("😴");
+            console.log('😴');
             this.x++;
         }
     }
@@ -81,12 +81,11 @@ let polly = new Parrot("Polly");
 polly.speak();
 // returns "Polly want a cracker!"
 
-
  const me = new ApprenticeParrot("Your Name");
- me.speak();
- me.speak();
- me.speak();
- me.speak();
+ //me.speak();
+ //me.speak();
+ //me.speak();
+ //me.speak();
 // return "😴"
 
 module.exports = {Parrot, ApprenticeParrot};
